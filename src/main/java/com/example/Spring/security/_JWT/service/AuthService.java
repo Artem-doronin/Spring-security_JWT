@@ -37,7 +37,7 @@ public class AuthService {
             UserDetails userDetails = (UserDetails) authentication.getPrincipal();
 
             String jwt = jwtUtils.generateToken(userDetails);
-            String refreshToken = jwtUtils.generateRefreshToken(new HashMap<>(), userDetails);
+            String refreshToken = jwtUtils.generateRefreshToken(userDetails);
 
             userDetailsService.resetFailedAttempts(username);
 
@@ -63,7 +63,7 @@ public class AuthService {
 
             if (jwtUtils.isTokenValid(refreshToken, userDetails)) {
                 String newJwt = jwtUtils.generateToken(userDetails);
-                String newRefreshToken = jwtUtils.generateRefreshToken(new HashMap<>(), userDetails);
+                String newRefreshToken = jwtUtils.generateRefreshToken(userDetails);
 
                 log.info("Refresh token used to issue new JWT and refresh token for user '{}'", username);
 
