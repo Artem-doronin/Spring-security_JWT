@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
 public class JWTUtils {
 
     private final SecretKey secretKey;
-    private static final long EXPIRATION_TIME = 86400000; // 24 часа
+    private static final long EXPIRATION_TIME = 86400000/24/12; // 24 часа
     private static final long REFRESH_EXPIRATION_TIME = 604800000; // 7 дней
 
     public JWTUtils() {
