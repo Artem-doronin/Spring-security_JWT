@@ -5,29 +5,35 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.function.Function;
 
 @Component
 public class JWTUtils {
+
     private final SecretKey secretKey;
     private static final long EXPIRATION_TIME = 86400000; // 24 часа
     private static final long REFRESH_EXPIRATION_TIME = 604800000; // 7 дней
 
     public JWTUtils() {
-        String base64Secret = "w4F6vN7yXqJ+3T0dH7v5Q6kL9eYf+2K7mQ1VZ3bH2sE=";
-        byte[] keyBytes = Decoders.BASE64.decode(base64Secret);
-        this.secretKey = Keys.hmacShaKeyFor(keyBytes);
+        String secretString = "sfdckjdfvdfiosdfnaisfneifnoaiewiefniofnisiesfnieninfisfifn";
+        byte[] keyBytes = Base64.getDecoder().decode(secretString.getBytes(StandardCharsets.UTF_8));
+        this.secretKey = new SecretKeySpec(keyBytes, "HmacSHA256");
     }
 
     public String generateToken(UserDetails userDetails) {
         return Jwts.builder()
                 .setSubject(userDetails.getUsername())
+                .claim("roles", userDetails.getAuthorities())
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
                 .signWith(secretKey, SignatureAlgorithm.HS256)
