@@ -4,6 +4,7 @@ import com.example.Spring.security._JWT.dto.JwtResponse;
 import com.example.Spring.security._JWT.exception.AuthenticationException;
 import com.example.Spring.security._JWT.repository.UserRepository;
 import com.example.Spring.security._JWT.utils.JWTUtils;
+import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -26,6 +27,7 @@ public class AuthService {
     private final JWTUtils jwtUtils;
     private final OurUserDetailedService userDetailsService;
     private final UserRepository userRepository;
+    private final RefreshTokenService refreshTokenService;
 
     public JwtResponse authenticateUser(String username, String password, String clientIP) {
         try {
@@ -37,7 +39,7 @@ public class AuthService {
             UserDetails userDetails = (UserDetails) authentication.getPrincipal();
 
             String jwt = jwtUtils.generateToken(userDetails);
-            String refreshToken = jwtUtils.generateRefreshToken(userDetails);
+            String refreshToken = refreshTokenService.generateRefreshToken(userDetails);
 
             userDetailsService.resetFailedAttempts(username);
 
@@ -61,9 +63,9 @@ public class AuthService {
             String username = jwtUtils.extractUsername(refreshToken);
             UserDetails userDetails = userDetailsService.loadUserByUsername(username);
 
-            if (jwtUtils.isTokenValid(refreshToken, userDetails)) {
+            if (refreshTokenService.isTokenValid(refreshToken, userDetails)) {
                 String newJwt = jwtUtils.generateToken(userDetails);
-                String newRefreshToken = jwtUtils.generateRefreshToken(userDetails);
+                String newRefreshToken = refreshTokenService.generateRefreshToken(userDetails);
 
                 log.info("Refresh token used to issue new JWT and refresh token for user '{}'", username);
 
@@ -79,7 +81,6 @@ public class AuthService {
         }
     }
 
-
     private void handleFailedLogin(String username, String clientIP) {
         userRepository.findByUsername(username).ifPresent(user -> {
             userDetailsService.increaseFailedAttempts(user);
@@ -93,5 +94,17 @@ public class AuthService {
             }
         });
     }
+    public void logout(String refreshToken) {
+        try {
+            refreshTokenService.revokeRefreshToken(refreshToken);
+            SecurityContextHolder.clearContext();
+            log.info("User  logged out and refresh token revoked");
+        } catch (EntityNotFoundException e) {
+            log.warn("Attempt to logout with non-existing refresh token");
+        } catch (Exception e) {
+            log.error("Error during logout", e);
+        }
+    }
+
 
 }

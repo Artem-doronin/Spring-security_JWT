@@ -9,7 +9,6 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,8 +28,6 @@ public class AuthController {
                                                         HttpServletRequest request) {
         String clientIP = getClientIP(request);
         JwtResponse response = authService.authenticateUser(loginRequest.getUsername(), loginRequest.getPassword(), clientIP);
-
-
         log.info("User {} logged in from IP {}", loginRequest.getUsername(), clientIP);
 
         return ResponseEntity.ok(response);
@@ -47,9 +44,15 @@ public class AuthController {
         if (xfHeader == null) {
             return request.getRemoteAddr();
         }
-        return xfHeader.split(",")[0].trim();  // Добавил trim() для чистоты
+        return xfHeader.split(",")[0].trim();
     }
 
+    @PostMapping("/logout")
+    public ResponseEntity<Void> logout(@Valid @RequestBody RefreshTokenRequest refreshRequest) {
+        authService.logout(refreshRequest.getRefreshToken());
+        log.info("Logout request processed");
+        return ResponseEntity.noContent().build();
+    }
 
 }
 

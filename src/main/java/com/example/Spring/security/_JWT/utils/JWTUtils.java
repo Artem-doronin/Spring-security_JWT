@@ -1,11 +1,9 @@
 package com.example.Spring.security._JWT.utils;
 
+import com.example.Spring.security._JWT.service.RefreshTokenService;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import io.jsonwebtoken.io.Decoders;
-import io.jsonwebtoken.security.Keys;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
@@ -24,10 +22,11 @@ import java.util.stream.Collectors;
 public class JWTUtils {
 
     private final SecretKey secretKey;
-    private static final long EXPIRATION_TIME = 86400000/24/12; // 24 часа
-    private static final long REFRESH_EXPIRATION_TIME = 604800000; // 7 дней
+    private static final long EXPIRATION_TIME = 900_000;
+    private static final long REFRESH_EXPIRATION_TIME = 604800000;
 
-    public JWTUtils() {
+    // Конструктор с инъекцией сервиса
+    public JWTUtils(RefreshTokenService refreshTokenService) {
         String secretString = "sfdckjdfvdfiosdfnaisfneifnoaiewiefniofnisiesfnieninfisfifn";
         byte[] keyBytes = Base64.getDecoder().decode(secretString.getBytes(StandardCharsets.UTF_8));
         this.secretKey = new SecretKeySpec(keyBytes, "HmacSHA256");
@@ -60,6 +59,10 @@ public class JWTUtils {
         return extractClaim(token, Claims::getSubject);
     }
 
+    public Date extractExpiration(String token) {
+        return extractClaim(token, Claims::getExpiration);
+    }
+
     public <T> T extractClaim(String token, Function<Claims, T> claimsResolver) {
         Claims claims = extractAllClaim(token);
         return claimsResolver.apply(claims);
@@ -78,7 +81,7 @@ public class JWTUtils {
         return (username.equals(userDetails.getUsername())) && !isTokenExpired(token);
     }
 
-    private boolean isTokenExpired(String token) {
+    public boolean isTokenExpired(String token) {
         return extractClaim(token, Claims::getExpiration).before(new Date());
     }
 
@@ -91,5 +94,4 @@ public class JWTUtils {
                 .signWith(secretKey, SignatureAlgorithm.HS256)
                 .compact();
     }
-
 }

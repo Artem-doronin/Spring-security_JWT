@@ -77,7 +77,6 @@ public class OurUserDetailedService implements UserDetailsService {
                 .orElseThrow(() -> new UsernameNotFoundException("User not found: " + username));
 
         userRepository.updateFailedAttempts(0, username);
-        // Если пользователь заблокирован, разблокируем его
         if (!user.isAccountNonLocked()) {
             user.setAccountNonLocked(true);
             user.setLockTime(null);

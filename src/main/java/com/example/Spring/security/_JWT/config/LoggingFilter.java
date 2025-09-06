@@ -28,14 +28,12 @@ public class LoggingFilter extends OncePerRequestFilter {
         long startTime = System.currentTimeMillis();
         String requestId = UUID.randomUUID().toString().substring(0, 8);
 
-        // Логируем входящий запрос
         logIncomingRequest(request, requestId);
 
         try {
             filterChain.doFilter(request, response);
         } finally {
             long duration = System.currentTimeMillis() - startTime;
-            // Логируем результат обработки
             logOutgoingResponse(request, response, duration, requestId);
         }
     }
@@ -54,7 +52,6 @@ public class LoggingFilter extends OncePerRequestFilter {
             );
         }
 
-        // Debug информация для разработки
         if (log.isDebugEnabled()) {
             log.debug("[{}] REQUEST_DETAILS -> Headers: {}, User-Agent: {}, Query: {}",
                     requestId,
@@ -70,7 +67,6 @@ public class LoggingFilter extends OncePerRequestFilter {
         String username = getUsernameFromSecurityContext();
         int status = response.getStatus();
 
-        // Разные уровни логирования в зависимости от статуса
         if (status >= 400 && status < 500) {
             log.warn("[{}] CLIENT_ERROR -> Status: {}, Duration: {}ms, User: {}, URI: {}",
                     requestId, status, duration, username, request.getRequestURI());
@@ -82,7 +78,6 @@ public class LoggingFilter extends OncePerRequestFilter {
                     requestId, status, duration, username, request.getRequestURI());
         }
 
-        // Логируем особые события безопасности
         logSecurityEvents(request, response, requestId);
     }
 
@@ -141,7 +136,6 @@ public class LoggingFilter extends OncePerRequestFilter {
         return headers.toString();
     }
 
-    // MDC для распределенного трейсинга (опционально)
     private void setupMdcContext(String requestId, HttpServletRequest request) {
         MDC.put("requestId", requestId);
         MDC.put("clientIP", getClientIP(request));
