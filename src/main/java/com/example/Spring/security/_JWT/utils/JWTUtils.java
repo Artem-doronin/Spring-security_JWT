@@ -1,17 +1,16 @@
 package com.example.Spring.security._JWT.utils;
 
-import com.example.Spring.security._JWT.service.RefreshTokenService;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.Keys;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
-import javax.crypto.spec.SecretKeySpec;
 import java.nio.charset.StandardCharsets;
-import java.util.Base64;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -20,16 +19,20 @@ import java.util.stream.Collectors;
 
 @Component
 public class JWTUtils {
-
     private final SecretKey secretKey;
-    private static final long EXPIRATION_TIME = 900_000;
-    private static final long REFRESH_EXPIRATION_TIME = 604800000;
+    private final long expirationTime;
+    private final long refreshExpirationTime;
 
-    // Конструктор с инъекцией сервиса
-    public JWTUtils(RefreshTokenService refreshTokenService) {
-        String secretString = "sfdckjdfvdfiosdfnaisfneifnoaiewiefniofnisiesfnieninfisfifn";
-        byte[] keyBytes = Base64.getDecoder().decode(secretString.getBytes(StandardCharsets.UTF_8));
-        this.secretKey = new SecretKeySpec(keyBytes, "HmacSHA256");
+    // Правильная инъекция через конструктор
+    public JWTUtils(
+            @Value("${jwt.secret}") String secretString,
+            @Value("${jwt.access.expiration:900000}") long expirationTime,
+            @Value("${jwt.refresh.expiration:604800000}") long refreshExpirationTime) {
+
+        // Генерация SecretKey из строки
+        this.secretKey = Keys.hmacShaKeyFor(secretString.getBytes(StandardCharsets.UTF_8));
+        this.expirationTime = expirationTime;
+        this.refreshExpirationTime = refreshExpirationTime;
     }
 
     public String generateToken(UserDetails userDetails) {
@@ -42,7 +45,7 @@ public class JWTUtils {
         claims.put("token_type", "access");
         claims.put("generated_at", System.currentTimeMillis());
 
-        return buildToken(claims, userDetails.getUsername(), EXPIRATION_TIME);
+        return buildToken(claims, userDetails.getUsername(), expirationTime);
     }
 
     public String generateRefreshToken(UserDetails userDetails) {
@@ -52,7 +55,7 @@ public class JWTUtils {
         claims.put("token_type", "refresh");
         claims.put("generated_at", System.currentTimeMillis());
 
-        return buildToken(claims, userDetails.getUsername(), REFRESH_EXPIRATION_TIME);
+        return buildToken(claims, userDetails.getUsername(), refreshExpirationTime);
     }
 
     public String extractUsername(String token) {
