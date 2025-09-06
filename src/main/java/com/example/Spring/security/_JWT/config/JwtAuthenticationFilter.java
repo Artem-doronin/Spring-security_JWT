@@ -33,10 +33,10 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         final String authHeader = request.getHeader("Authorization");
         final String jwt;
         final String username;
+        String path = request.getServletPath();
 
-        if ("/api/auth/".equals(request.getServletPath()) &&
-                "POST".equalsIgnoreCase(request.getMethod())) {
-
+        if (((path.startsWith("/auth/register") || path.startsWith("/auth/login")||path.startsWith("/auth/logout")) &&
+                "POST".equalsIgnoreCase(request.getMethod()))) {
             filterChain.doFilter(request, response);
             return;
         }

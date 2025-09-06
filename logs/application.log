@@ -1459,3 +1459,989 @@ Caused by: org.postgresql.util.PSQLException: ОШИБКА: повторяюще
 2025-09-06 15:02:49.687 [SpringApplicationShutdownHook] [] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-09-06 15:02:49.691 [SpringApplicationShutdownHook] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-09-06 15:02:49.698 [SpringApplicationShutdownHook] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-06 15:23:23.889 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - Starting SpringSecurityJwtApplication using Java 23 with PID 10584 (C:\Users\User\Desktop\Мои проекты\Spring-security_JWT\target\classes started by User in C:\Users\User\Desktop\Мои проекты\Spring-security_JWT)
+2025-09-06 15:23:23.891 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-06 15:23:24.823 [main] [] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-06 15:23:24.898 [main] [] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2025-09-06 15:23:25.625 [main] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8443 (https)
+2025-09-06 15:23:25.647 [main] [] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-06 15:23:25.648 [main] [] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-06 15:23:25.719 [main] [] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-06 15:23:25.720 [main] [] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1768 ms
+2025-09-06 15:23:25.921 [main] [] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-06 15:23:25.993 [main] [] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-06 15:23:26.034 [main] [] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-06 15:23:26.399 [main] [] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-06 15:23:26.439 [main] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-06 15:23:26.795 [main] [] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@503a7990
+2025-09-06 15:23:26.796 [main] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-06 15:23:26.843 [main] [] [] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-06 15:23:26.864 [main] [] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-06 15:23:28.000 [main] [] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-06 15:23:28.184 [main] [] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-06 15:23:28.468 [main] [] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-06 15:23:29.094 [main] [] [] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-09-06 15:23:29.095 [main] [] [] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-06 15:23:29.173 [main] [] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-06 15:23:30.007 [main] [] [] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\User\.keystore] using alias [myapp] with trust store [null]
+2025-09-06 15:23:30.023 [main] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8443 (https) with context path '/'
+2025-09-06 15:23:30.029 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - Started SpringSecurityJwtApplication in 6.701 seconds (process running for 7.44)
+2025-09-06 15:23:33.860 [https-jsse-nio-8443-exec-4] [] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-06 15:23:33.860 [https-jsse-nio-8443-exec-4] [] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-06 15:23:33.861 [https-jsse-nio-8443-exec-4] [] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-09-06 15:23:33.886 [https-jsse-nio-8443-exec-4] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [29b62b14] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /api/auth/login, Auth: No auth
+2025-09-06 15:23:33.910 [https-jsse-nio-8443-exec-4] [] [] ERROR c.e.S.s._.e.GlobalExceptionHandler - Unexpected error: 
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/auth/login.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.example.Spring.security._JWT.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.example.Spring.security._JWT.config.LoggingFilter.doFilterInternal(LoggingFilter.java:34)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-09-06 15:23:33.983 [https-jsse-nio-8443-exec-4] [] [] ERROR c.e.S.s._JWT.config.LoggingFilter - [29b62b14] SERVER_ERROR -> Status: 500, Duration: 97ms, User: anonymous, URI: /api/auth/login
+2025-09-06 15:23:40.756 [https-jsse-nio-8443-exec-3] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [fe24afa8] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /api/auth/login, Auth: No auth
+2025-09-06 15:23:40.765 [https-jsse-nio-8443-exec-3] [] [] ERROR c.e.S.s._.e.GlobalExceptionHandler - Unexpected error: 
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/auth/login.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.example.Spring.security._JWT.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.example.Spring.security._JWT.config.LoggingFilter.doFilterInternal(LoggingFilter.java:34)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-09-06 15:23:40.767 [https-jsse-nio-8443-exec-3] [] [] ERROR c.e.S.s._JWT.config.LoggingFilter - [fe24afa8] SERVER_ERROR -> Status: 500, Duration: 11ms, User: anonymous, URI: /api/auth/login
+2025-09-06 15:24:04.719 [https-jsse-nio-8443-exec-9] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [1f3d58f3] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:24:04.721 [https-jsse-nio-8443-exec-9] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [1f3d58f3] CLIENT_ERROR -> Status: 401, Duration: 2ms, User: anonymous, URI: /auth/login
+2025-09-06 15:24:04.722 [https-jsse-nio-8443-exec-9] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [1f3d58f3] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:24:09.899 [https-jsse-nio-8443-exec-8] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [1bd738c7] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:24:09.900 [https-jsse-nio-8443-exec-8] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [1bd738c7] CLIENT_ERROR -> Status: 401, Duration: 1ms, User: anonymous, URI: /auth/login
+2025-09-06 15:24:09.900 [https-jsse-nio-8443-exec-8] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [1bd738c7] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:24:20.444 [https-jsse-nio-8443-exec-10] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [8b739d8b] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:24:20.444 [https-jsse-nio-8443-exec-10] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [8b739d8b] CLIENT_ERROR -> Status: 401, Duration: 0ms, User: anonymous, URI: /auth/login
+2025-09-06 15:24:20.445 [https-jsse-nio-8443-exec-10] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [8b739d8b] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:24:29.179 [https-jsse-nio-8443-exec-1] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [e34b0f81] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:24:29.179 [https-jsse-nio-8443-exec-1] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [e34b0f81] CLIENT_ERROR -> Status: 401, Duration: 0ms, User: anonymous, URI: /auth/login
+2025-09-06 15:24:29.179 [https-jsse-nio-8443-exec-1] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [e34b0f81] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:24:59.955 [SpringApplicationShutdownHook] [] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-06 15:24:59.959 [tomcat-shutdown] [] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-06 15:24:59.964 [SpringApplicationShutdownHook] [] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-06 15:24:59.966 [SpringApplicationShutdownHook] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-06 15:24:59.972 [SpringApplicationShutdownHook] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-06 15:25:05.557 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - Starting SpringSecurityJwtApplication using Java 23 with PID 14300 (C:\Users\User\Desktop\Мои проекты\Spring-security_JWT\target\classes started by User in C:\Users\User\Desktop\Мои проекты\Spring-security_JWT)
+2025-09-06 15:25:05.559 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-06 15:25:06.436 [main] [] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-06 15:25:06.516 [main] [] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2025-09-06 15:25:07.272 [main] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8443 (https)
+2025-09-06 15:25:07.289 [main] [] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-06 15:25:07.290 [main] [] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-06 15:25:07.354 [main] [] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-06 15:25:07.355 [main] [] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1734 ms
+2025-09-06 15:25:07.550 [main] [] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-06 15:25:07.615 [main] [] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-06 15:25:07.658 [main] [] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-06 15:25:08.017 [main] [] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-06 15:25:08.052 [main] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-06 15:25:08.228 [main] [] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6b6fd0
+2025-09-06 15:25:08.231 [main] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-06 15:25:08.274 [main] [] [] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-06 15:25:08.297 [main] [] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-06 15:25:09.500 [main] [] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-06 15:25:09.680 [main] [] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-06 15:25:10.002 [main] [] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-06 15:25:10.649 [main] [] [] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-09-06 15:25:10.650 [main] [] [] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-06 15:25:10.744 [main] [] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-06 15:25:11.695 [main] [] [] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\User\.keystore] using alias [myapp] with trust store [null]
+2025-09-06 15:25:11.715 [main] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8443 (https) with context path '/'
+2025-09-06 15:25:11.724 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - Started SpringSecurityJwtApplication in 6.751 seconds (process running for 7.815)
+2025-09-06 15:25:19.336 [https-jsse-nio-8443-exec-6] [] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-06 15:25:19.336 [https-jsse-nio-8443-exec-6] [] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-06 15:25:19.337 [https-jsse-nio-8443-exec-6] [] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-06 15:25:19.370 [https-jsse-nio-8443-exec-6] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [496b9527] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:26:22.458 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [496b9527] CLIENT_ERROR -> Status: 401, Duration: 62377ms, User: anonymous, URI: /auth/login
+2025-09-06 15:26:22.459 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [496b9527] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:26:57.555 [SpringApplicationShutdownHook] [] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-06 15:26:57.559 [tomcat-shutdown] [] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-06 15:26:57.566 [SpringApplicationShutdownHook] [] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-06 15:26:57.568 [SpringApplicationShutdownHook] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-06 15:26:57.573 [SpringApplicationShutdownHook] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-06 15:27:02.995 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - Starting SpringSecurityJwtApplication using Java 23 with PID 8228 (C:\Users\User\Desktop\Мои проекты\Spring-security_JWT\target\classes started by User in C:\Users\User\Desktop\Мои проекты\Spring-security_JWT)
+2025-09-06 15:27:02.998 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-06 15:27:04.047 [main] [] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-06 15:27:04.140 [main] [] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
+2025-09-06 15:27:04.995 [main] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8443 (https)
+2025-09-06 15:27:05.015 [main] [] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-06 15:27:05.016 [main] [] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-06 15:27:05.106 [main] [] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-06 15:27:05.106 [main] [] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2047 ms
+2025-09-06 15:27:05.298 [main] [] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-06 15:27:05.364 [main] [] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-06 15:27:05.413 [main] [] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-06 15:27:05.783 [main] [] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-06 15:27:05.827 [main] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-06 15:27:06.015 [main] [] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@8aa5ab4
+2025-09-06 15:27:06.017 [main] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-06 15:27:06.070 [main] [] [] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-06 15:27:06.095 [main] [] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-06 15:27:07.300 [main] [] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-06 15:27:07.473 [main] [] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-06 15:27:07.788 [main] [] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-06 15:27:08.420 [main] [] [] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-09-06 15:27:08.421 [main] [] [] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-06 15:27:08.528 [main] [] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-06 15:27:09.440 [main] [] [] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\User\.keystore] using alias [myapp] with trust store [null]
+2025-09-06 15:27:09.461 [main] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8443 (https) with context path '/'
+2025-09-06 15:27:09.468 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - Started SpringSecurityJwtApplication in 7.082 seconds (process running for 7.936)
+2025-09-06 15:27:10.854 [https-jsse-nio-8443-exec-3] [] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-06 15:27:10.854 [https-jsse-nio-8443-exec-3] [] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-06 15:27:10.855 [https-jsse-nio-8443-exec-3] [] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-06 15:27:10.889 [https-jsse-nio-8443-exec-3] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [e8b2d393] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:27:13.909 [SpringApplicationShutdownHook] [] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-06 15:27:14.350 [https-jsse-nio-8443-exec-3] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'Koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:27:14.392 [https-jsse-nio-8443-exec-3] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [e8b2d393] CLIENT_ERROR -> Status: 401, Duration: 3503ms, User: anonymous, URI: /auth/login
+2025-09-06 15:27:14.393 [https-jsse-nio-8443-exec-3] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [e8b2d393] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:27:14.415 [tomcat-shutdown] [] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-06 15:27:14.424 [SpringApplicationShutdownHook] [] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-06 15:27:14.426 [SpringApplicationShutdownHook] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-06 15:27:14.439 [SpringApplicationShutdownHook] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-06 15:27:18.421 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - Starting SpringSecurityJwtApplication using Java 23 with PID 8632 (C:\Users\User\Desktop\Мои проекты\Spring-security_JWT\target\classes started by User in C:\Users\User\Desktop\Мои проекты\Spring-security_JWT)
+2025-09-06 15:27:18.424 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-06 15:27:19.225 [main] [] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-06 15:27:19.292 [main] [] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2025-09-06 15:27:20.032 [main] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8443 (https)
+2025-09-06 15:27:20.049 [main] [] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-06 15:27:20.049 [main] [] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-06 15:27:20.121 [main] [] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-06 15:27:20.121 [main] [] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1643 ms
+2025-09-06 15:27:20.283 [main] [] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-06 15:27:20.345 [main] [] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-06 15:27:20.385 [main] [] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-06 15:27:20.681 [main] [] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-06 15:27:20.712 [main] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-06 15:27:20.877 [main] [] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1de30c31
+2025-09-06 15:27:20.879 [main] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-06 15:27:20.928 [main] [] [] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-06 15:27:20.950 [main] [] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-06 15:27:22.002 [main] [] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-06 15:27:22.164 [main] [] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-06 15:27:22.471 [main] [] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-06 15:27:23.096 [main] [] [] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-09-06 15:27:23.097 [main] [] [] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-06 15:27:23.204 [main] [] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-06 15:27:24.099 [main] [] [] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\User\.keystore] using alias [myapp] with trust store [null]
+2025-09-06 15:27:24.115 [main] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8443 (https) with context path '/'
+2025-09-06 15:27:24.121 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - Started SpringSecurityJwtApplication in 6.205 seconds (process running for 6.87)
+2025-09-06 15:27:29.069 [https-jsse-nio-8443-exec-7] [] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-06 15:27:29.069 [https-jsse-nio-8443-exec-7] [] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-06 15:27:29.070 [https-jsse-nio-8443-exec-7] [] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-06 15:27:29.098 [https-jsse-nio-8443-exec-7] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [0f00f785] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:27:29.575 [https-jsse-nio-8443-exec-7] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'Koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:27:29.615 [https-jsse-nio-8443-exec-7] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [0f00f785] CLIENT_ERROR -> Status: 401, Duration: 517ms, User: anonymous, URI: /auth/login
+2025-09-06 15:27:29.615 [https-jsse-nio-8443-exec-7] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [0f00f785] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:27:36.179 [https-jsse-nio-8443-exec-6] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [1ffb8f25] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:27:36.283 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'Koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:27:36.286 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [1ffb8f25] CLIENT_ERROR -> Status: 401, Duration: 107ms, User: anonymous, URI: /auth/login
+2025-09-06 15:27:36.286 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [1ffb8f25] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:27:54.477 [SpringApplicationShutdownHook] [] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-06 15:27:54.482 [tomcat-shutdown] [] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-06 15:27:54.488 [SpringApplicationShutdownHook] [] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-06 15:27:54.490 [SpringApplicationShutdownHook] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-06 15:27:54.496 [SpringApplicationShutdownHook] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-06 15:28:05.085 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - Starting SpringSecurityJwtApplication using Java 23 with PID 9404 (C:\Users\User\Desktop\Мои проекты\Spring-security_JWT\target\classes started by User in C:\Users\User\Desktop\Мои проекты\Spring-security_JWT)
+2025-09-06 15:28:05.088 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-06 15:28:05.934 [main] [] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-06 15:28:06.025 [main] [] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
+2025-09-06 15:28:06.820 [main] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8443 (https)
+2025-09-06 15:28:06.838 [main] [] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-06 15:28:06.839 [main] [] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-06 15:28:06.902 [main] [] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-06 15:28:06.903 [main] [] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1748 ms
+2025-09-06 15:28:07.099 [main] [] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-06 15:28:07.173 [main] [] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-06 15:28:07.219 [main] [] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-06 15:28:07.585 [main] [] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-06 15:28:07.623 [main] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-06 15:28:07.802 [main] [] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ab2009f
+2025-09-06 15:28:07.804 [main] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-06 15:28:07.845 [main] [] [] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-06 15:28:07.866 [main] [] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-06 15:28:09.020 [main] [] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-06 15:28:09.180 [main] [] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-06 15:28:09.522 [main] [] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-06 15:28:10.109 [main] [] [] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-09-06 15:28:10.109 [main] [] [] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-06 15:28:10.193 [main] [] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-06 15:28:11.084 [main] [] [] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\User\.keystore] using alias [myapp] with trust store [null]
+2025-09-06 15:28:11.103 [main] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8443 (https) with context path '/'
+2025-09-06 15:28:11.111 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - Started SpringSecurityJwtApplication in 6.658 seconds (process running for 7.478)
+2025-09-06 15:28:13.291 [https-jsse-nio-8443-exec-6] [] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-06 15:28:13.291 [https-jsse-nio-8443-exec-6] [] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-06 15:28:13.293 [https-jsse-nio-8443-exec-6] [] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-06 15:28:13.324 [https-jsse-nio-8443-exec-6] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [00cc8968] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:28:37.829 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'Koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:29:14.466 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [00cc8968] CLIENT_ERROR -> Status: 401, Duration: 60361ms, User: anonymous, URI: /auth/login
+2025-09-06 15:29:14.466 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [00cc8968] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:30:44.196 [SpringApplicationShutdownHook] [] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-06 15:30:44.202 [tomcat-shutdown] [] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-06 15:30:44.209 [SpringApplicationShutdownHook] [] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-06 15:30:44.211 [SpringApplicationShutdownHook] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-06 15:30:44.218 [SpringApplicationShutdownHook] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-06 15:31:03.147 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - Starting SpringSecurityJwtApplication using Java 23 with PID 2000 (C:\Users\User\Desktop\Мои проекты\Spring-security_JWT\target\classes started by User in C:\Users\User\Desktop\Мои проекты\Spring-security_JWT)
+2025-09-06 15:31:03.149 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-06 15:31:03.943 [main] [] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-06 15:31:04.011 [main] [] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2025-09-06 15:31:04.689 [main] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8443 (https)
+2025-09-06 15:31:04.705 [main] [] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-06 15:31:04.705 [main] [] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-06 15:31:04.757 [main] [] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-06 15:31:04.757 [main] [] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1553 ms
+2025-09-06 15:31:04.938 [main] [] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-06 15:31:04.994 [main] [] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-06 15:31:05.034 [main] [] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-06 15:31:05.330 [main] [] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-06 15:31:05.360 [main] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-06 15:31:05.521 [main] [] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@17136390
+2025-09-06 15:31:05.523 [main] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-06 15:31:05.568 [main] [] [] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-06 15:31:05.593 [main] [] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-06 15:31:06.715 [main] [] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-06 15:31:06.869 [main] [] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-06 15:31:07.203 [main] [] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-06 15:31:07.820 [main] [] [] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-09-06 15:31:07.820 [main] [] [] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-06 15:31:07.914 [main] [] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-06 15:31:08.751 [main] [] [] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\User\.keystore] using alias [myapp] with trust store [null]
+2025-09-06 15:31:08.770 [main] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8443 (https) with context path '/'
+2025-09-06 15:31:08.777 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - Started SpringSecurityJwtApplication in 6.128 seconds (process running for 6.785)
+2025-09-06 15:31:25.100 [https-jsse-nio-8443-exec-6] [] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-06 15:31:25.100 [https-jsse-nio-8443-exec-6] [] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-06 15:31:25.101 [https-jsse-nio-8443-exec-6] [] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-06 15:31:25.130 [https-jsse-nio-8443-exec-6] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [a1f6bef0] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:31:25.609 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'Koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:31:25.645 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [a1f6bef0] CLIENT_ERROR -> Status: 401, Duration: 515ms, User: anonymous, URI: /auth/login
+2025-09-06 15:31:25.646 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [a1f6bef0] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:31:36.596 [https-jsse-nio-8443-exec-7] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [8dbbed58] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:31:37.107 [https-jsse-nio-8443-exec-7] [] [] INFO  c.e.S.s._JWT.service.AuthService - User 'artem' authenticated successfully from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:31:37.107 [https-jsse-nio-8443-exec-7] [] [] INFO  c.e.S.s._.controller.AuthController - User artem logged in from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:31:37.114 [https-jsse-nio-8443-exec-7] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [8dbbed58] SUCCESS -> Status: 200, Duration: 518ms, User: artem, URI: /auth/login
+2025-09-06 15:35:55.044 [https-jsse-nio-8443-exec-4] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [da2109d8] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:35:55.418 [https-jsse-nio-8443-exec-4] [] [] WARN  c.e.S.s._JWT.service.AuthService - Increased failed login attempts for user 'artem' from IP 0:0:0:0:0:0:0:1. Current attempts: 1
+2025-09-06 15:35:55.419 [https-jsse-nio-8443-exec-4] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'artem' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:35:55.421 [https-jsse-nio-8443-exec-4] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [da2109d8] CLIENT_ERROR -> Status: 401, Duration: 377ms, User: anonymous, URI: /auth/login
+2025-09-06 15:35:55.421 [https-jsse-nio-8443-exec-4] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [da2109d8] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:35:56.869 [https-jsse-nio-8443-exec-5] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [0a291e54] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:35:57.239 [https-jsse-nio-8443-exec-5] [] [] WARN  c.e.S.s._JWT.service.AuthService - Increased failed login attempts for user 'artem' from IP 0:0:0:0:0:0:0:1. Current attempts: 2
+2025-09-06 15:35:57.240 [https-jsse-nio-8443-exec-5] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'artem' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:35:57.241 [https-jsse-nio-8443-exec-5] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [0a291e54] CLIENT_ERROR -> Status: 401, Duration: 372ms, User: anonymous, URI: /auth/login
+2025-09-06 15:35:57.241 [https-jsse-nio-8443-exec-5] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [0a291e54] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:35:58.039 [https-jsse-nio-8443-exec-6] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [aed83395] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:35:58.399 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.service.AuthService - Increased failed login attempts for user 'artem' from IP 0:0:0:0:0:0:0:1. Current attempts: 3
+2025-09-06 15:35:58.399 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'artem' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:35:58.400 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [aed83395] CLIENT_ERROR -> Status: 401, Duration: 361ms, User: anonymous, URI: /auth/login
+2025-09-06 15:35:58.400 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [aed83395] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:35:59.237 [https-jsse-nio-8443-exec-7] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [cca128e8] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:35:59.607 [https-jsse-nio-8443-exec-7] [] [] WARN  c.e.S.s._JWT.service.AuthService - Increased failed login attempts for user 'artem' from IP 0:0:0:0:0:0:0:1. Current attempts: 4
+2025-09-06 15:35:59.607 [https-jsse-nio-8443-exec-7] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'artem' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:35:59.609 [https-jsse-nio-8443-exec-7] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [cca128e8] CLIENT_ERROR -> Status: 401, Duration: 372ms, User: anonymous, URI: /auth/login
+2025-09-06 15:35:59.609 [https-jsse-nio-8443-exec-7] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [cca128e8] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:36:00.516 [https-jsse-nio-8443-exec-8] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [b422c692] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:36:00.892 [https-jsse-nio-8443-exec-8] [] [] INFO  c.e.S.s._.s.OurUserDetailedService - User artem has been locked due to too many failed attempts
+2025-09-06 15:36:00.912 [https-jsse-nio-8443-exec-8] [] [] WARN  c.e.S.s._JWT.service.AuthService - Increased failed login attempts for user 'artem' from IP 0:0:0:0:0:0:0:1. Current attempts: 5
+2025-09-06 15:36:00.912 [https-jsse-nio-8443-exec-8] [] [] WARN  c.e.S.s._JWT.service.AuthService - User  'artem' has been locked due to too many failed login attempts
+2025-09-06 15:36:00.912 [https-jsse-nio-8443-exec-8] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'artem' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:36:00.915 [https-jsse-nio-8443-exec-8] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [b422c692] CLIENT_ERROR -> Status: 401, Duration: 399ms, User: anonymous, URI: /auth/login
+2025-09-06 15:36:00.915 [https-jsse-nio-8443-exec-8] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [b422c692] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:36:03.154 [https-jsse-nio-8443-exec-9] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [864125b5] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:36:03.158 [https-jsse-nio-8443-exec-9] [] [] WARN  c.e.S.s._JWT.service.AuthService - Locked account login attempt for user 'artem' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:36:03.161 [https-jsse-nio-8443-exec-9] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [864125b5] CLIENT_ERROR -> Status: 423, Duration: 7ms, User: anonymous, URI: /auth/login
+2025-09-06 15:36:08.271 [https-jsse-nio-8443-exec-10] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [2f29a858] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:36:08.276 [https-jsse-nio-8443-exec-10] [] [] WARN  c.e.S.s._JWT.service.AuthService - Locked account login attempt for user 'artem' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:36:08.277 [https-jsse-nio-8443-exec-10] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [2f29a858] CLIENT_ERROR -> Status: 423, Duration: 6ms, User: anonymous, URI: /auth/login
+2025-09-06 15:36:09.831 [https-jsse-nio-8443-exec-2] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [3baa2356] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:36:09.836 [https-jsse-nio-8443-exec-2] [] [] WARN  c.e.S.s._JWT.service.AuthService - Locked account login attempt for user 'artem' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:36:09.837 [https-jsse-nio-8443-exec-2] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [3baa2356] CLIENT_ERROR -> Status: 423, Duration: 6ms, User: anonymous, URI: /auth/login
+2025-09-06 15:36:37.113 [https-jsse-nio-8443-exec-1] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [82a905c2] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:36:37.203 [https-jsse-nio-8443-exec-1] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'Koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:36:37.205 [https-jsse-nio-8443-exec-1] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [82a905c2] CLIENT_ERROR -> Status: 401, Duration: 93ms, User: anonymous, URI: /auth/login
+2025-09-06 15:36:37.205 [https-jsse-nio-8443-exec-1] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [82a905c2] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:36:38.086 [https-jsse-nio-8443-exec-3] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [09c3f49a] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:36:38.178 [https-jsse-nio-8443-exec-3] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'Koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:36:38.179 [https-jsse-nio-8443-exec-3] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [09c3f49a] CLIENT_ERROR -> Status: 401, Duration: 93ms, User: anonymous, URI: /auth/login
+2025-09-06 15:36:38.179 [https-jsse-nio-8443-exec-3] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [09c3f49a] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:36:39.060 [https-jsse-nio-8443-exec-4] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [3d079b48] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:36:39.153 [https-jsse-nio-8443-exec-4] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'Koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:36:39.154 [https-jsse-nio-8443-exec-4] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [3d079b48] CLIENT_ERROR -> Status: 401, Duration: 94ms, User: anonymous, URI: /auth/login
+2025-09-06 15:36:39.155 [https-jsse-nio-8443-exec-4] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [3d079b48] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:36:39.930 [https-jsse-nio-8443-exec-5] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [0052b198] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:36:40.024 [https-jsse-nio-8443-exec-5] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'Koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:36:40.025 [https-jsse-nio-8443-exec-5] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [0052b198] CLIENT_ERROR -> Status: 401, Duration: 95ms, User: anonymous, URI: /auth/login
+2025-09-06 15:36:40.025 [https-jsse-nio-8443-exec-5] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [0052b198] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:36:40.761 [https-jsse-nio-8443-exec-6] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [1db2912b] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:36:40.855 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'Koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:36:40.857 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [1db2912b] CLIENT_ERROR -> Status: 401, Duration: 96ms, User: anonymous, URI: /auth/login
+2025-09-06 15:36:40.857 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [1db2912b] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:36:41.861 [https-jsse-nio-8443-exec-7] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [e17d81bd] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:36:41.956 [https-jsse-nio-8443-exec-7] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'Koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:36:41.958 [https-jsse-nio-8443-exec-7] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [e17d81bd] CLIENT_ERROR -> Status: 401, Duration: 97ms, User: anonymous, URI: /auth/login
+2025-09-06 15:36:41.958 [https-jsse-nio-8443-exec-7] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [e17d81bd] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:36:42.788 [https-jsse-nio-8443-exec-8] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [5ff4f357] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:36:42.881 [https-jsse-nio-8443-exec-8] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'Koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:36:42.882 [https-jsse-nio-8443-exec-8] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [5ff4f357] CLIENT_ERROR -> Status: 401, Duration: 94ms, User: anonymous, URI: /auth/login
+2025-09-06 15:36:42.882 [https-jsse-nio-8443-exec-8] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [5ff4f357] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:36:43.670 [https-jsse-nio-8443-exec-9] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [fc913810] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:36:43.762 [https-jsse-nio-8443-exec-9] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'Koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:36:43.764 [https-jsse-nio-8443-exec-9] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [fc913810] CLIENT_ERROR -> Status: 401, Duration: 94ms, User: anonymous, URI: /auth/login
+2025-09-06 15:36:43.764 [https-jsse-nio-8443-exec-9] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [fc913810] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:36:44.536 [https-jsse-nio-8443-exec-10] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [ae0ead09] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:36:44.629 [https-jsse-nio-8443-exec-10] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'Koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:36:44.630 [https-jsse-nio-8443-exec-10] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [ae0ead09] CLIENT_ERROR -> Status: 401, Duration: 94ms, User: anonymous, URI: /auth/login
+2025-09-06 15:36:44.630 [https-jsse-nio-8443-exec-10] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [ae0ead09] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:36:45.367 [https-jsse-nio-8443-exec-2] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [54123043] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:36:45.458 [https-jsse-nio-8443-exec-2] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'Koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:36:45.460 [https-jsse-nio-8443-exec-2] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [54123043] CLIENT_ERROR -> Status: 401, Duration: 93ms, User: anonymous, URI: /auth/login
+2025-09-06 15:36:45.460 [https-jsse-nio-8443-exec-2] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [54123043] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:36:58.697 [https-jsse-nio-8443-exec-1] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [9521a7bc] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:36:58.797 [https-jsse-nio-8443-exec-1] [] [] WARN  c.e.S.s._JWT.service.AuthService - Increased failed login attempts for user 'koly' from IP 0:0:0:0:0:0:0:1. Current attempts: 1
+2025-09-06 15:36:58.797 [https-jsse-nio-8443-exec-1] [] [] WARN  c.e.S.s._JWT.service.AuthService - Failed login attempt for user 'koly' from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:36:58.799 [https-jsse-nio-8443-exec-1] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [9521a7bc] CLIENT_ERROR -> Status: 401, Duration: 102ms, User: anonymous, URI: /auth/login
+2025-09-06 15:36:58.799 [https-jsse-nio-8443-exec-1] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [9521a7bc] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /auth/login
+2025-09-06 15:37:04.758 [https-jsse-nio-8443-exec-3] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [44a71e15] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:37:04.876 [https-jsse-nio-8443-exec-3] [] [] INFO  c.e.S.s._JWT.service.AuthService - User 'koly' authenticated successfully from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:37:04.876 [https-jsse-nio-8443-exec-3] [] [] INFO  c.e.S.s._.controller.AuthController - User koly logged in from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:37:04.878 [https-jsse-nio-8443-exec-3] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [44a71e15] SUCCESS -> Status: 200, Duration: 120ms, User: koly, URI: /auth/login
+2025-09-06 15:37:30.712 [https-jsse-nio-8443-exec-4] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [802b25f8] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: GET, URI: /api/users/1, Auth: No auth
+2025-09-06 15:37:30.714 [https-jsse-nio-8443-exec-4] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [802b25f8] CLIENT_ERROR -> Status: 401, Duration: 2ms, User: anonymous, URI: /api/users/1
+2025-09-06 15:37:30.714 [https-jsse-nio-8443-exec-4] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [802b25f8] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /api/users/1
+2025-09-06 15:37:39.194 [https-jsse-nio-8443-exec-5] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [4a9143b0] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: GET, URI: /api/users/1, Auth: No auth
+2025-09-06 15:37:39.194 [https-jsse-nio-8443-exec-5] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [4a9143b0] CLIENT_ERROR -> Status: 401, Duration: 0ms, User: anonymous, URI: /api/users/1
+2025-09-06 15:37:39.194 [https-jsse-nio-8443-exec-5] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [4a9143b0] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /api/users/1
+2025-09-06 15:38:03.803 [https-jsse-nio-8443-exec-6] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [78640f07] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: GET, URI: /api/users/1, Auth: Bearer token present
+2025-09-06 15:38:03.895 [https-jsse-nio-8443-exec-6] [] [] ERROR c.e.S.s._.e.GlobalExceptionHandler - Unexpected error: 
+org.springframework.security.authorization.AuthorizationDeniedException: Access Denied
+	at org.springframework.security.authorization.method.ThrowingMethodAuthorizationDeniedHandler.handleDeniedInvocation(ThrowingMethodAuthorizationDeniedHandler.java:38)
+	at org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager.handleDeniedInvocation(PreAuthorizeAuthorizationManager.java:108)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.handle(AuthorizationManagerBeforeMethodInterceptor.java:287)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:260)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:196)
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.example.Spring.security._JWT.controller.UserController$$SpringCGLIB$$0.getUserById(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at com.example.Spring.security._JWT.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.example.Spring.security._JWT.config.LoggingFilter.doFilterInternal(LoggingFilter.java:34)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-09-06 15:38:03.900 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [78640f07] CLIENT_ERROR -> Status: 403, Duration: 97ms, User: koly, URI: /api/users/1
+2025-09-06 15:38:03.901 [https-jsse-nio-8443-exec-6] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [78640f07] SECURITY_EVENT -> FORBIDDEN access for user: koly to: /api/users/1
+2025-09-06 15:38:05.899 [https-jsse-nio-8443-exec-7] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [577c17fb] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: GET, URI: /api/users/1, Auth: Bearer token present
+2025-09-06 15:38:05.911 [https-jsse-nio-8443-exec-7] [] [] ERROR c.e.S.s._.e.GlobalExceptionHandler - Unexpected error: 
+org.springframework.security.authorization.AuthorizationDeniedException: Access Denied
+	at org.springframework.security.authorization.method.ThrowingMethodAuthorizationDeniedHandler.handleDeniedInvocation(ThrowingMethodAuthorizationDeniedHandler.java:38)
+	at org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager.handleDeniedInvocation(PreAuthorizeAuthorizationManager.java:108)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.handle(AuthorizationManagerBeforeMethodInterceptor.java:287)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:260)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:196)
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.example.Spring.security._JWT.controller.UserController$$SpringCGLIB$$0.getUserById(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at com.example.Spring.security._JWT.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.example.Spring.security._JWT.config.LoggingFilter.doFilterInternal(LoggingFilter.java:34)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-09-06 15:38:05.914 [https-jsse-nio-8443-exec-7] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [577c17fb] CLIENT_ERROR -> Status: 403, Duration: 15ms, User: koly, URI: /api/users/1
+2025-09-06 15:38:05.914 [https-jsse-nio-8443-exec-7] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [577c17fb] SECURITY_EVENT -> FORBIDDEN access for user: koly to: /api/users/1
+2025-09-06 15:40:49.731 [https-jsse-nio-8443-exec-4] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [3a623389] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: GET, URI: /api/users, Auth: Bearer token present
+2025-09-06 15:40:49.741 [https-jsse-nio-8443-exec-4] [] [] ERROR c.e.S.s._.e.GlobalExceptionHandler - Unexpected error: 
+org.springframework.security.authorization.AuthorizationDeniedException: Access Denied
+	at org.springframework.security.authorization.method.ThrowingMethodAuthorizationDeniedHandler.handleDeniedInvocation(ThrowingMethodAuthorizationDeniedHandler.java:38)
+	at org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager.handleDeniedInvocation(PreAuthorizeAuthorizationManager.java:108)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.handle(AuthorizationManagerBeforeMethodInterceptor.java:287)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:260)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:196)
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.example.Spring.security._JWT.controller.UserController$$SpringCGLIB$$0.getAllUsers(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at com.example.Spring.security._JWT.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.example.Spring.security._JWT.config.LoggingFilter.doFilterInternal(LoggingFilter.java:34)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-09-06 15:40:49.743 [https-jsse-nio-8443-exec-4] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [3a623389] CLIENT_ERROR -> Status: 403, Duration: 12ms, User: koly, URI: /api/users
+2025-09-06 15:40:49.743 [https-jsse-nio-8443-exec-4] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [3a623389] SECURITY_EVENT -> FORBIDDEN access for user: koly to: /api/users
+2025-09-06 15:45:55.486 [SpringApplicationShutdownHook] [] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-06 15:45:55.491 [tomcat-shutdown] [] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-06 15:45:55.495 [SpringApplicationShutdownHook] [] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-06 15:45:55.497 [SpringApplicationShutdownHook] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-06 15:45:55.507 [SpringApplicationShutdownHook] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-06 15:46:01.420 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - Starting SpringSecurityJwtApplication using Java 23 with PID 10952 (C:\Users\User\Desktop\Мои проекты\Spring-security_JWT\target\classes started by User in C:\Users\User\Desktop\Мои проекты\Spring-security_JWT)
+2025-09-06 15:46:01.422 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-06 15:46:02.281 [main] [] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-06 15:46:02.355 [main] [] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2025-09-06 15:46:03.075 [main] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8443 (https)
+2025-09-06 15:46:03.093 [main] [] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-06 15:46:03.093 [main] [] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-06 15:46:03.143 [main] [] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-06 15:46:03.144 [main] [] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1667 ms
+2025-09-06 15:46:03.325 [main] [] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-06 15:46:03.388 [main] [] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-06 15:46:03.428 [main] [] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-06 15:46:03.727 [main] [] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-06 15:46:03.758 [main] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-06 15:46:03.926 [main] [] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@36c783ca
+2025-09-06 15:46:03.928 [main] [] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-06 15:46:03.971 [main] [] [] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-06 15:46:03.991 [main] [] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-06 15:46:05.118 [main] [] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-06 15:46:05.281 [main] [] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-06 15:46:05.605 [main] [] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-06 15:46:06.187 [main] [] [] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-09-06 15:46:06.188 [main] [] [] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-06 15:46:06.284 [main] [] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-06 15:46:07.165 [main] [] [] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\User\.keystore] using alias [myapp] with trust store [null]
+2025-09-06 15:46:07.183 [main] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8443 (https) with context path '/'
+2025-09-06 15:46:07.194 [main] [] [] INFO  c.e.S.s._.SpringSecurityJwtApplication - Started SpringSecurityJwtApplication in 6.382 seconds (process running for 7.054)
+2025-09-06 15:46:13.991 [https-jsse-nio-8443-exec-6] [] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-06 15:46:13.991 [https-jsse-nio-8443-exec-6] [] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-06 15:46:13.993 [https-jsse-nio-8443-exec-6] [] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-06 15:46:14.020 [https-jsse-nio-8443-exec-6] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [2be7d9ae] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/register, Auth: No auth
+2025-09-06 15:46:14.540 [https-jsse-nio-8443-exec-6] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [2be7d9ae] SUCCESS -> Status: 200, Duration: 520ms, User: anonymous, URI: /auth/register
+2025-09-06 15:46:32.541 [https-jsse-nio-8443-exec-7] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [1cd31dd4] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: POST, URI: /auth/login, Auth: No auth
+2025-09-06 15:46:32.843 [https-jsse-nio-8443-exec-7] [] [] INFO  c.e.S.s._JWT.service.AuthService - User 'koly12' authenticated successfully from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:46:32.844 [https-jsse-nio-8443-exec-7] [] [] INFO  c.e.S.s._.controller.AuthController - User koly12 logged in from IP 0:0:0:0:0:0:0:1
+2025-09-06 15:46:32.851 [https-jsse-nio-8443-exec-7] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [1cd31dd4] SUCCESS -> Status: 200, Duration: 310ms, User: koly12, URI: /auth/login
+2025-09-06 15:46:59.115 [https-jsse-nio-8443-exec-8] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [3214b32b] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: GET, URI: /api/users, Auth: No auth
+2025-09-06 15:46:59.118 [https-jsse-nio-8443-exec-8] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [3214b32b] CLIENT_ERROR -> Status: 401, Duration: 3ms, User: anonymous, URI: /api/users
+2025-09-06 15:46:59.118 [https-jsse-nio-8443-exec-8] [] [] WARN  c.e.S.s._JWT.config.LoggingFilter - [3214b32b] SECURITY_EVENT -> UNAUTHORIZED access attempt to: /api/users
+2025-09-06 15:47:10.932 [https-jsse-nio-8443-exec-9] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [1266a003] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: GET, URI: /api/users, Auth: Bearer token present
+2025-09-06 15:47:11.053 [https-jsse-nio-8443-exec-9] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [1266a003] SUCCESS -> Status: 200, Duration: 121ms, User: koly12, URI: /api/users
+2025-09-06 15:48:30.257 [https-jsse-nio-8443-exec-6] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [0aabf177] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: GET, URI: /api/users/1, Auth: Bearer token present
+2025-09-06 15:48:30.284 [https-jsse-nio-8443-exec-6] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [0aabf177] SUCCESS -> Status: 200, Duration: 27ms, User: koly12, URI: /api/users/1
+2025-09-06 15:48:47.944 [https-jsse-nio-8443-exec-7] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [cabc57df] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: GET, URI: /api/users/2, Auth: Bearer token present
+2025-09-06 15:48:47.961 [https-jsse-nio-8443-exec-7] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [cabc57df] SUCCESS -> Status: 200, Duration: 17ms, User: koly12, URI: /api/users/2
+2025-09-06 15:49:30.107 [https-jsse-nio-8443-exec-8] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [c8c35eaf] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: GET, URI: /api/users/1, Auth: Bearer token present
+2025-09-06 15:49:30.127 [https-jsse-nio-8443-exec-8] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [c8c35eaf] SUCCESS -> Status: 200, Duration: 20ms, User: koly12, URI: /api/users/1
+2025-09-06 15:50:35.502 [https-jsse-nio-8443-exec-5] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [4c11167b] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: GET, URI: /api/users/3, Auth: Bearer token present
+2025-09-06 15:50:35.519 [https-jsse-nio-8443-exec-5] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [4c11167b] SUCCESS -> Status: 200, Duration: 17ms, User: koly12, URI: /api/users/3
+2025-09-06 15:51:53.786 [https-jsse-nio-8443-exec-1] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [ab8797a0] INCOMING_REQUEST -> IP: 0:0:0:0:0:0:0:1, Method: GET, URI: /api/users/3, Auth: Bearer token present
+2025-09-06 15:51:53.801 [https-jsse-nio-8443-exec-1] [] [] INFO  c.e.S.s._JWT.config.LoggingFilter - [ab8797a0] SUCCESS -> Status: 200, Duration: 15ms, User: koly12, URI: /api/users/3
